@@ -8,7 +8,8 @@ import { reducers } from './reducers';
 import App from './App';
 import './index.css';
 
-const store = createStore(reducers, compose(applyMiddleware(thunk)));
+const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
+const store = createStore(reducers, composeEnhancers(applyMiddleware(thunk)));
 
 ReactDOM.render(
   <Provider store={store}>

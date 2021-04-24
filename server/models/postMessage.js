@@ -5,6 +5,7 @@ const postSchema = mongoose.Schema({
     message: String,
     creator: String,
     tags: [String],
+    //imagen convertida a base64
     selectedFile: String,
     likeCount: {
         type: Number,
