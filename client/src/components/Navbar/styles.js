@@ -21,16 +21,18 @@ export default makeStyles((theme) => ({
   toolbar: {
     display: 'flex',
     justifyContent: 'flex-end',
-    width: '400px',
+    width: '800px',
   },
   profile: {
     display: 'flex',
     justifyContent: 'space-between',
-    width: '400px',
+    width: '450px',
   },
   userName: {
     display: 'flex',
     alignItems: 'center',
+    padding:'0 10px 0 10px',
+    fontSize: '0.8em'
   },
   brandContainer: {
     display: 'flex',

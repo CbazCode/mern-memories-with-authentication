@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
+import userRoutes from './routes/users.js';
 import postRoutes from './routes/posts.js';
 
 dotenv.config()
@@ -15,6 +16,7 @@ app.use(bodyParser.urlencoded({ limit: '30mb', extended: true }))
 app.use(cors());
 
 app.use('/posts', postRoutes);
+app.use('/user', userRoutes);
 
 //Lo q se vera cuando se despliegue
 app.get('/', (req, res)=>{
