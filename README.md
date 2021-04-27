@@ -7,6 +7,5 @@
 
 - run ```npm i && npm start``` for both client and server side to start the app
 
-Referency:
 
 Referency: <a href = "https://www.youtube.com/channel/UCmXmlB4-HJytD7wek0Uo97A">JavaScriptM</a>
