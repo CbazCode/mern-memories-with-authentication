@@ -1,6 +1,7 @@
 # Memories
 
-![Memories](https://i.ibb.co/Z8Y0CJv/Screenshot-2020-10-30-at-11-10-04.png)
+![2021-04-27_10h59_49](https://user-images.githubusercontent.com/49380593/116274192-0cd98d00-a748-11eb-8ad9-c682b98bfaf3.png)
+
 
 ## Setup:
 
