@@ -18,19 +18,19 @@ const Navbar = () => {
   const logout = () => {
     dispatch({ type: actionType.LOGOUT });
 
-    history.push("/auth");
+    history.push("/");
 
     setUser(null);
   };
 
   useEffect(() => {
     const token = user?.token;
+    //Verifica si el token expiro
+    if (token) {
+      const decodedToken = decode(token);
 
-    // if (token) {
-    //   const decodedToken = decode(token);
-
-    //   if (decodedToken.exp * 1000 < new Date().getTime()) logout();
-    // }
+      if (decodedToken.exp * 1000 < new Date().getTime()) logout();
+    }
 
     setUser(JSON.parse(localStorage.getItem("profile")));
   }, [location]);
